@@ -1,0 +1,68 @@
+.wkitem-ttl {
+  margin-top: .5em;
+
+@include ttl-sub-text;
+}
+.wkitem-main-image {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  border: $border-tool;
+}
+.wkitem-word {
+  text-align: center;
+}
+.btn-wkitem-link {
+  @include hover-gray-shadow(8px,8px);
+}
+
+.wkitem-link {
+  & li {
+    padding: 0 .3em;
+
+@include boxbtn-tool(50%) {
+      display: inline-block;
+      padding: .5em 0 .5em 2em;
+
+@include flower-icon(red);
+    }
+
+    & + li {
+      margin-top: 1em;
+    }
+  }
+}
+.wkitem-detail {
+  & dt {
+    @include flower-icon(wh);
+  }
+  & dd + dt {
+    margin-top: 1.5em;
+  }
+}
+
+.btn-wkitem-return {
+  text-align: center;
+
+@include boxbtn-tool(30%) {
+    display: inline-block;
+    padding: .5em 1em;
+  }
+
+@include hover-gray-shadow(8px,8px);
+}
+
+//タブレット=====================
+@include mq {
+  .wkitem-link {
+    & li {
+      width: 30%;
+    }
+  }
+  .btn-wkitem-return {
+    @include boxbtn-tool(20%);
+  }
+}
+//PC============================
+@include mq(pc) {
+}

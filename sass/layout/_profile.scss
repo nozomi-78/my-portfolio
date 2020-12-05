@@ -1,0 +1,52 @@
+.pf-ttl {
+  @include ttl-top($branch: profile);
+}
+.pf-sabttl {
+  @include ttl-sub-text;
+}
+
+.pf-img {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1em;
+  width: 70%;
+  border: $border-tool;
+}
+
+.pf-me-detail {
+  & dt {
+    font-weight: normal;
+
+@include flower-icon(wh);
+  }
+  & dd {
+    margin-bottom: 1em;
+  }
+}
+.pf-skill {
+  @include ttl-small-text;
+  &-inner {
+    display: flex;
+
+    justify-content: space-around;
+  }
+}
+.pf-skill-type {
+  @include flower-icon(wh);
+
+@include ttl-small-text;
+}
+.pf-skill-detail {
+  list-style: circle inside;
+}
+
+//タブレット=====================
+@include mq {
+  .pf-img {
+    width: 50%;
+  }
+  .pf-me-detail {
+    margin: 0 auto;
+    width: 80%;
+  }
+}

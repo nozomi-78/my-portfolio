@@ -1,0 +1,55 @@
+.wk-ttl {
+  @include ttl-top($branch: works);
+}
+
+.wk-work-type {
+  display: inline-block;
+  margin-bottom: .2em;
+  padding: 0 .5em;
+  border: $border-tool;
+  font-size: .8rem;
+}
+
+.wk-work-link {
+  display: block;
+  border: $border-tool;
+}
+.wk-work-name {
+  background: $sub-color;
+  font-weight: bold;
+
+  @include ttl-small-text;
+}
+
+.wk-work-img {
+  overflow: hidden;
+  border-top: $border-tool;
+}
+.wk-work-img img {
+  transition: 1s all;
+}
+.wk-work-img img:hover {
+  transition: .5s all;
+  transform: scale(1.1,1.1);
+}
+
+//タブレット=====================
+@include mq {
+  .wk-works {
+    display: flex;
+
+    flex-wrap: wrap;
+    // justify-content:space-around;
+  }
+  .wk-work {
+    margin-right: .5em;
+    width: 48%;
+  }
+}
+//PC===========================
+@include mq(pc) {
+  .wk-work {
+    margin-right: 8px;
+    width: $pc-width-main / 3 - 8px;
+  }
+}

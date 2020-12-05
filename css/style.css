@@ -1,0 +1,713 @@
+@charset "UTF-8";
+* {
+  font-family: 'Montserrat','游ゴシック',YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  color: #333;
+}
+
+.nl-container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media screen and (min-width: 960px) {
+  main {
+    margin: 0 auto;
+    width: 1000px;
+  }
+  .nl-container {
+    width: 900px;
+  }
+}
+
+.con-ttl {
+  margin-top: .5em;
+  margin-bottom: 1em;
+}
+
+.con-item {
+  margin-bottom: 3em;
+}
+
+@media screen and (min-width: 960px) {
+  .con-ttl {
+    margin: 20px auto 64px;
+  }
+  .con-item {
+    margin-bottom: 64px;
+  }
+}
+
+.head {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 50;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0 2px 3px -3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 3px -3px rgba(0, 0, 0, 0.3);
+}
+
+.btn-globalnav a {
+  position: relative;
+}
+
+.btn-globalnav a:before {
+  border-bottom: solid 1px #333;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: scaley(0);
+          transform: scaley(0);
+  position: absolute;
+  top: 0;
+  right: -8px;
+  bottom: 0;
+  left: -8px;
+  content: '';
+}
+
+.btn-globalnav a:hover:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.btn-globalnav a:hover {
+  text-shadow: 0 0 2px #a9a9a9;
+}
+
+.head-ttl {
+  padding-left: 1em;
+  font-weight: bold;
+}
+
+.head-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.head-nav li {
+  margin: 0 .5em;
+  list-style: none;
+}
+
+@media screen and (min-width: 560px) {
+  .head-ttl {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .head-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    padding: 16px 0 8px;
+    width: 1000px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .head-ttl {
+    padding-left: 0;
+    font-size: 24px;
+  }
+  .head-nav li {
+    margin: 0;
+    width: 100px;
+    text-align: center;
+  }
+}
+
+.home-ttl {
+  margin-top: .5em;
+  margin-bottom: 3em;
+  position: relative;
+  z-index: -1;
+  padding: 24% 0;
+  text-align: center;
+  text-shadow: 0 0 4px #a9a9a9;
+  font-size: 1.5rem;
+}
+
+.home-ttl::before {
+  background: url(../img/frame-flower-top.png) no-repeat center center/contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+}
+
+@media screen and (min-width: 560px) {
+  .home-ttl {
+    letter-spacing: .1em;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .home-ttl {
+    letter-spacing: none;
+    font-size: 56px;
+  }
+}
+
+.home-item {
+  margin-bottom: 4em;
+}
+
+.home-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-homenav {
+  list-style-type: none;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-size: 1.2rem;
+  margin: auto auto;
+  width: auto;
+  border: solid 1px #333;
+}
+
+.btn-homenav:hover {
+  -webkit-box-shadow: 0 0 16px 16px gainsboro inset;
+          box-shadow: 0 0 16px 16px gainsboro inset;
+  text-shadow: 0 0 4px #a9a9a9;
+}
+
+.btn-homenav a {
+  width: 100%;
+  display: inline-block;
+  padding: .5em 0;
+}
+
+.btn-homenav + li {
+  margin-left: 1em;
+}
+
+.home-tweet-text {
+  position: relative;
+  padding-top: 75px;
+  padding-right: 40%;
+  padding-bottom: 75px;
+  text-align: center;
+}
+
+.home-tweet-text:before {
+  width: 40%;
+  background: url(../img/usagi.png) no-repeat center center/contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  content: '';
+}
+
+@media screen and (min-width: 560px) {
+  .home-nav li {
+    width: 25%;
+  }
+  .home-nav li + li {
+    margin-left: 1.5em;
+  }
+  .home-tweet-text {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .home-ttl,
+  .home-item {
+    margin-bottom: 160px;
+  }
+}
+
+.foot-copy {
+  text-align: center;
+}
+
+.foot {
+  margin: 1em;
+}
+
+.pf-ttl {
+  position: relative;
+  z-index: -1;
+  padding: 20% 0;
+  text-align: center;
+  text-shadow: 0 0 4px #a9a9a9;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.pf-ttl::before {
+  background: url(../img/frame-flower-profile.png) no-repeat center center/contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+}
+
+@media screen and (min-width: 560px) {
+  .pf-ttl {
+    letter-spacing: .1em;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pf-ttl {
+    letter-spacing: 16px;
+    font-size: 56px;
+  }
+}
+
+.pf-sabttl {
+  margin-bottom: .5em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.pf-img {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1em;
+  width: 70%;
+  border: solid 1px #333;
+}
+
+.pf-me-detail dt {
+  font-weight: normal;
+  position: relative;
+  padding-left: 30px;
+}
+
+.pf-me-detail dt::before {
+  width: 25px;
+  height: 25px;
+  background: url(../img/icon-flower-wh.png) no-repeat center center/contain;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  content: '';
+}
+
+.pf-me-detail dd {
+  margin-bottom: 1em;
+}
+
+.pf-skill {
+  font-size: 1.2rem;
+}
+
+.pf-skill-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.pf-skill-type {
+  position: relative;
+  padding-left: 30px;
+  font-size: 1.2rem;
+}
+
+.pf-skill-type::before {
+  width: 25px;
+  height: 25px;
+  background: url(../img/icon-flower-wh.png) no-repeat center center/contain;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  content: '';
+}
+
+.pf-skill-detail {
+  list-style: circle inside;
+}
+
+@media screen and (min-width: 560px) {
+  .pf-img {
+    width: 50%;
+  }
+  .pf-me-detail {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+.wk-ttl {
+  position: relative;
+  z-index: -1;
+  padding: 20% 0;
+  text-align: center;
+  text-shadow: 0 0 4px #a9a9a9;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.wk-ttl::before {
+  background: url(../img/frame-flower-works.png) no-repeat center center/contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+}
+
+@media screen and (min-width: 560px) {
+  .wk-ttl {
+    letter-spacing: .1em;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .wk-ttl {
+    letter-spacing: 16px;
+    font-size: 56px;
+  }
+}
+
+.wk-work-type {
+  display: inline-block;
+  margin-bottom: .2em;
+  padding: 0 .5em;
+  border: solid 1px #333;
+  font-size: .8rem;
+}
+
+.wk-work-link {
+  display: block;
+  border: solid 1px #333;
+}
+
+.wk-work-name {
+  background: gainsboro;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.wk-work-img {
+  overflow: hidden;
+  border-top: solid 1px #333;
+}
+
+.wk-work-img img {
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.wk-work-img img:hover {
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+@media screen and (min-width: 560px) {
+  .wk-works {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wk-work {
+    margin-right: .5em;
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .wk-work {
+    margin-right: 8px;
+    width: 292px;
+  }
+}
+
+.contact-ttl {
+  position: relative;
+  z-index: -1;
+  padding: 20% 0;
+  text-align: center;
+  text-shadow: 0 0 4px #a9a9a9;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.contact-ttl::before {
+  background: url(../img/frame-flower-contact.png) no-repeat center center/contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+}
+
+@media screen and (min-width: 560px) {
+  .contact-ttl {
+    letter-spacing: .1em;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .contact-ttl {
+    letter-spacing: 16px;
+    font-size: 56px;
+  }
+}
+
+.contact-smallttl {
+  margin-bottom: .5em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.contact-mail-detail {
+  margin: auto;
+  width: 100%;
+}
+
+.contact-mail-detail dt {
+  position: relative;
+  padding-left: 30px;
+}
+
+.contact-mail-detail dt::before {
+  width: 25px;
+  height: 25px;
+  background: url(../img/icon-flower-wh.png) no-repeat center center/contain;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  content: '';
+}
+
+.contact-mail-detail dd {
+  margin-bottom: 2em;
+  border: solid 1px #333;
+}
+
+.contact-mail-detail dd input {
+  width: 100%;
+}
+
+.contact-mail-detail dd textarea {
+  width: 100%;
+}
+
+.contact-btn-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-contact {
+  text-align: center;
+  margin: auto auto;
+  width: 30%;
+  border: solid 1px #333;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.btn-contact input {
+  width: 100%;
+  padding: .5em 1em;
+}
+
+.btn-contact:hover {
+  -webkit-box-shadow: 0 0 8px 8px gainsboro inset;
+          box-shadow: 0 0 8px 8px gainsboro inset;
+  text-shadow: 0 0 4px #a9a9a9;
+}
+
+.btn-contact a {
+  display: inline-block;
+  padding: .5em 1em;
+}
+
+.btn-contact + .btn-contact {
+  margin-left: 1em;
+}
+
+.contact-check dd {
+  border: none;
+}
+
+@media screen and (min-width: 560px) {
+  .contact-mail-detail {
+    width: 80%;
+  }
+  .btn-contact {
+    margin: auto auto;
+    width: 20%;
+    border: solid 1px #333;
+  }
+  .btn-contact input {
+    width: 100%;
+  }
+}
+
+.wkitem-ttl {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.wkitem-main-image {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  border: solid 1px #333;
+}
+
+.wkitem-word {
+  text-align: center;
+}
+
+.btn-wkitem-link {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.btn-wkitem-link:hover {
+  -webkit-box-shadow: 0 0 8px 8px gainsboro inset;
+          box-shadow: 0 0 8px 8px gainsboro inset;
+  text-shadow: 0 0 4px #a9a9a9;
+}
+
+.wkitem-link li {
+  padding: 0 .3em;
+  margin: auto auto;
+  width: 50%;
+  border: solid 1px #333;
+}
+
+.wkitem-link li a {
+  width: 100%;
+  display: inline-block;
+  padding: .5em 0 .5em 2em;
+  position: relative;
+  padding-left: 30px;
+}
+
+.wkitem-link li a::before {
+  width: 25px;
+  height: 25px;
+  background: url(../img/icon-flower-red.png) no-repeat center center/contain;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  content: '';
+}
+
+.wkitem-link li + li {
+  margin-top: 1em;
+}
+
+.wkitem-detail dt {
+  position: relative;
+  padding-left: 30px;
+}
+
+.wkitem-detail dt::before {
+  width: 25px;
+  height: 25px;
+  background: url(../img/icon-flower-wh.png) no-repeat center center/contain;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  content: '';
+}
+
+.wkitem-detail dd + dt {
+  margin-top: 1.5em;
+}
+
+.btn-wkitem-return {
+  text-align: center;
+  margin: auto auto;
+  width: 30%;
+  border: solid 1px #333;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.btn-wkitem-return a {
+  width: 100%;
+  display: inline-block;
+  padding: .5em 1em;
+}
+
+.btn-wkitem-return:hover {
+  -webkit-box-shadow: 0 0 8px 8px gainsboro inset;
+          box-shadow: 0 0 8px 8px gainsboro inset;
+  text-shadow: 0 0 4px #a9a9a9;
+}
+
+@media screen and (min-width: 560px) {
+  .wkitem-link li {
+    width: 30%;
+  }
+  .btn-wkitem-return {
+    margin: auto auto;
+    width: 20%;
+    border: solid 1px #333;
+  }
+  .btn-wkitem-return a {
+    width: 100%;
+  }
+}

@@ -1,0 +1,57 @@
+.head {
+  position: sticky;
+  z-index:50;
+  top: 0;
+  background: rgba(255,255,255,.8);
+  box-shadow: 0 2px 3px -3px rgba(0,0,0,.3);
+}
+
+.btn-globalnav a {
+  @include hover-underline;
+}
+.head-ttl {
+  padding-left: 1em;
+  font-weight: bold;
+}
+
+.head-nav {
+  display: flex;
+
+  justify-content: space-around;
+  & li {
+    margin: 0 .5em;
+    list-style: none;
+  }
+}
+
+// //タブレット=====================
+@include mq {
+  .head-ttl {
+    font-size: 1.5em;
+  }
+}
+// //PC============================
+@include mq(pc) {
+  // .head{
+
+  // }
+  .head-inner {
+    display: flex;
+    margin: 0 auto;
+    padding: 16px 0 8px;
+    width: $pc-width-base;
+
+    justify-content: space-between;
+  }
+  .head-ttl {
+    padding-left: 0;
+    font-size: 24px;
+  }
+  .head-nav {
+    & li {
+      margin: 0;
+      width: 100px;
+      text-align: center;
+    }
+  }
+}

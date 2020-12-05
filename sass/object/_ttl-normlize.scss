@@ -1,0 +1,19 @@
+// ページタイトルのスタイル=======================
+@mixin ttl-top($padding: 20%,$branch: a) {
+  position: relative;
+  z-index: -1;
+  padding: $padding 0;
+  text-align: center;
+  &::before {
+    background: url(../img/frame-flower-#{$branch}.png) no-repeat center center/contain;
+    @include position-tool(0,0,0,0);
+  }
+  //トップページ用------------
+  @if $branch==top {
+    @include ttl-toppage-text;
+  }
+  //コンテンツページ用------------
+  @else {
+    @include ttl-contentpage-text;
+  }
+}

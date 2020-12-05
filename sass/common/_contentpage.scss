@@ -1,0 +1,20 @@
+.con-ttl {
+  margin-top: .5em;
+  margin-bottom: 1em;
+}
+
+.con-item {
+  margin-bottom: 3em;
+}
+//タブレット=====================
+
+
+//PC============================
+@include mq(pc) {
+  .con-ttl {
+    margin: 20px auto 64px;
+  }
+  .con-item {
+    margin-bottom: 64px;
+  }
+}

@@ -1,0 +1,71 @@
+.home-ttl {
+  margin-top: .5em;
+  margin-bottom: 3em;
+
+@include ttl-top(24%,top);
+}
+.home-item {
+  margin-bottom: 4em;
+}
+.home-nav {
+  display: flex;
+
+  justify-content: center;
+}
+.btn-homenav {
+  list-style-type: none;
+  text-align: center;
+
+@include hover-gray-shadow;
+
+@include ttl-small-text;
+
+@include boxbtn-tool(auto,a) {
+    display: inline-block;
+    padding: .5em 0;
+  }
+
+  & + li {
+    margin-left: 1em;
+  }
+}
+
+$backimage-size-w: 400px;//背景画像の幅
+$backimage-size-h: 600px;//背景画像の高さ
+.home-tweet-text {
+  position: relative;
+  padding-top: $backimage-size-h / 8 ;
+  padding-right: 40%;
+  padding-bottom: $backimage-size-h / 8 ;
+  text-align: center;
+  &:before {
+    width: 40%;
+    background: url(../img/usagi.png) no-repeat center center/contain;
+
+@include position-tool($top: 0, $right: 0, $bottom: 0);
+  }
+}
+
+//タブレット=====================
+@include mq {
+  .home-nav {
+    & li {
+      width: 25%;
+      & + li {
+        margin-left: 1.5em;
+      }
+    }
+  }
+  .home-tweet-text {
+    padding-top: $backimage-size-h / 3 ;
+    padding-bottom: $backimage-size-h / 3 ;
+  }
+}
+
+//PS=====================
+@include mq(pc) {
+  .home-ttl,
+  .home-item {
+    margin-bottom: 160px;
+  }
+}

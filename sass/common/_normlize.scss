@@ -1,0 +1,34 @@
+* {
+  font-family: 'Montserrat','游ゴシック',YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif;
+}
+body {
+  background: $back-color;
+  color: $font-color;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+a {
+  color: $font-color;
+}
+.nl-container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+//タブレット=====================
+
+
+//PC============================
+@include mq(pc) {
+  main {
+    margin: 0 auto;
+    width: $pc-width-base;
+  }
+  .nl-container {
+    width: $pc-width-main;
+  }
+}

@@ -1,0 +1,65 @@
+//レスポンシブの設定========================
+//BreakPint-------------
+$breakpoints: (
+  'tb': 'screen and (min-width: 560px)',
+  'pc': 'screen and (min-width: 960px)'
+) !default;
+
+//BreakPint mixin------
+@mixin mq($breakpoint: tb) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// 色関係の設定========================
+$font-color: #333;
+$point-color: #a9a9a9;
+$sub-color: lighten($point-color,20%);
+$back-color: #fff;
+
+//PC幅の設定========================
+$pc-width-base: 1000px;
+$pc-width-main: 900px;
+
+// 見出しスタイルの設定========================
+//トップページタイトル----------
+@mixin ttl-toppage-text {
+  text-shadow: 0 0 4px $point-color;
+  font-size: 1.5rem;
+@include mq {
+    letter-spacing: .1em;
+    font-size: 2rem;
+  }
+
+@include mq(pc) {
+    letter-spacing: none;
+    font-size: 56px;
+  }
+}
+//コンテンツページタイトル--------
+@mixin ttl-contentpage-text {
+  text-shadow: 0 0 4px $point-color;
+  font-weight: bold;
+  font-size: 2.5rem;
+@include mq {
+    letter-spacing: .1em;
+    font-size: 3rem;
+  }
+
+@include mq(pc) {
+    letter-spacing: 16px;
+    font-size: 56px;
+  }
+}
+//サブタイトル(h2など)--------
+@mixin ttl-sub-text {
+  margin-bottom: .5em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+//小さい見出し(dh・h3など)--------
+@mixin ttl-small-text {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,23 @@
+//絶対位置の設定=====================
+@mixin position-tool ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  content: '';
+}
+
+//ボーダーの設定========================
+$border-tool: solid 1px $font-color;
+
+//ボックスボタンリンク=====================
+@mixin boxbtn-tool($width: 25%,$selector: a) {
+  margin: auto auto;
+  width: $width;
+  border: $border-tool;
+  & #{$selector} {
+    width: 100%;
+    @content;
+  }
+}

@@ -1,0 +1,12 @@
+// 小さいお花アイコンの設定=======================
+@mixin flower-icon($color) {
+  position: relative;
+  padding-left: 30px;
+  &::before {
+    width: 25px;
+    height: 25px;
+    background: url(../img/icon-flower-#{$color}.png) no-repeat center center/contain;
+
+    @include position-tool($left: 0);
+  }
+}

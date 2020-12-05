@@ -1,0 +1,61 @@
+.contact-ttl {
+  @include ttl-top($branch: contact);
+}
+.contact-smallttl {
+  @include ttl-sub-text;
+}
+.contact-mail-detail {
+  margin: auto;
+  width: 100%;
+  dt {
+    @include flower-icon(wh);
+  }
+  dd {
+    margin-bottom: 2em;
+    border: $border-tool;
+    input {
+      width: 100%;
+    }
+    textarea {
+      width: 100%;
+    }
+  }
+}
+
+.contact-btn-area {
+  display: flex;
+
+  justify-content: center;
+}
+.btn-contact {
+  text-align: center;
+
+  @include boxbtn-tool(30%,input) {
+    padding: .5em 1em;
+  };
+
+  @include hover-gray-shadow(8px,8px);
+  a {
+    display: inline-block;
+    padding: .5em 1em;
+  }
+  + .btn-contact {
+    margin-left: 1em;
+  }
+}
+
+.contact-check {
+  dd {
+    border: none;
+  }
+}
+
+//タブレット=====================
+@include mq {
+  .contact-mail-detail {
+    width: 80%;
+  }
+  .btn-contact {
+    @include boxbtn-tool(20%,input);
+  }
+}
