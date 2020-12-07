@@ -210,23 +210,26 @@ a {
   margin-left: 1em;
 }
 
-.home-tweet-text {
+.home-message-wrap {
   position: relative;
   padding-top: 75px;
-  padding-right: 40%;
   padding-bottom: 75px;
-  text-align: center;
 }
 
-.home-tweet-text:before {
-  width: 40%;
-  background: url(../img/usagi.png) no-repeat center center/contain;
+.home-message-wrap:before {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: auto;
   content: '';
+  width: 40%;
+  background: url(../img/usagi.png) no-repeat center center/contain;
+}
+
+.home-message-text {
+  width: 60%;
+  text-align: center;
 }
 
 @media screen and (min-width: 560px) {
@@ -236,7 +239,7 @@ a {
   .home-nav li + li {
     margin-left: 1.5em;
   }
-  .home-tweet-text {
+  .home-message-wrap {
     padding-top: 200px;
     padding-bottom: 200px;
   }

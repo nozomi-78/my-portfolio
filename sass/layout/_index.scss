@@ -30,20 +30,20 @@
   }
 }
 
-$backimage-size-w: 400px;//背景画像の幅
 $backimage-size-h: 600px;//背景画像の高さ
-.home-tweet-text {
+.home-message-wrap {
   position: relative;
   padding-top: $backimage-size-h / 8 ;
-  padding-right: 40%;
   padding-bottom: $backimage-size-h / 8 ;
-  text-align: center;
   &:before {
-    width: 40%;
+    @include position-tool($top: 0, $right: 0, $bottom: 0);
+    width:40%;
     background: url(../img/usagi.png) no-repeat center center/contain;
-
-@include position-tool($top: 0, $right: 0, $bottom: 0);
   }
+}
+.home-message-text{
+  width:60%;
+  text-align: center;
 }
 
 //タブレット=====================
@@ -56,7 +56,7 @@ $backimage-size-h: 600px;//背景画像の高さ
       }
     }
   }
-  .home-tweet-text {
+  .home-message-wrap {
     padding-top: $backimage-size-h / 3 ;
     padding-bottom: $backimage-size-h / 3 ;
   }
