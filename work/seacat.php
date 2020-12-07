@@ -35,9 +35,9 @@ require_once('../header.php');
           <dt class="js-scroll scroll-underline-right-normal">制作意図</dt>
           <dd>PHP、SQLのスキルアップのため</dd>
           <dd>「バカみたいにくだらない、でもなぜだかﾌﾌｯとなってしまう」ゲームを作りたい。</dd>
-          <dt class="js-scroll scroll-underline-right-normal">コメント</dt>
-          <dd>クリック数と生まれたネコの情報はAjaxを使ってデータベースに非同期で登録され、ネコの情報は図鑑ページに反映されるようにしました。<br>
-          使用しているイラストは全て私がアナログで描き、GIMPで加工したものです。</dd>
+          <dt class="js-scroll scroll-underline-right-normal">ポイント</dt>
+          <dd>クリック数と生まれたネコの情報はAjaxを使ってデータベースに非同期で登録され、ネコの情報は図鑑ページに反映されるようにしました。</dd>
+          <dd>使用しているイラストは全て私がアナログで描き、GIMPで加工したものです。</dd>
         </dl>
       </div>
       <?php require_once('return.php'); ?>

@@ -33,11 +33,12 @@ require_once('../header.php');
           <dt class="js-scroll scroll-underline-right-normal">制作意図</dt>
           <dd>メールフォーム作成・SCSSの練習のため</dd>
           <dd>自分を表現するサイトを作りたい。</dd>
-          <dt class="js-scroll scroll-underline-right-normal">コメント</dt>
-          <dd>フォントの色は#000ではなく、サイトに柔らかい雰囲気を出すため、ほんのりグレーにしています。</dd>
-          <dd>メンテナンス性を良くするため、SCSSのフォルダ分けを用途ごとに細かく分けました。</dd>
+          <dt class="js-scroll scroll-underline-right-normal">ポイント</dt>
+          <dd>スクロールイベントは対象要素へ付与するクラス名によって、アニメーションの種類や速度を簡単に変更できるようにしています。</dd>
           <dd>使用しているイラストは全て私がアナログで描き、Photoshopで加工したものです。</dd>
+          <dd>メンテナンス性を意識して、scssやJavaScriptのフォルダを用途ごとに細かく分けました。</dd>
           <dd>httpへアクセスされた場合は、.htaccessファイルでhttpsへ301リダイレクトされるよう設定しています。</dd>
+          <dd>フォントの色はサイトに柔らかい雰囲気を出すため、#000ではなく、ほんのりグレーにしています。</dd>
         </dl>
       </div>
       <?php require_once('return.php'); ?>
