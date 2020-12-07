@@ -36,8 +36,11 @@
   & dt {
     @include flower-icon(wh);
   }
-  & dd + dt {
-    margin-top: 1.5em;
+  & dd + dt{
+margin-top: 2em;
+  }
+  & dd::before{
+content:'◦';
   }
 }
 
