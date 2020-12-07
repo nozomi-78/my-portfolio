@@ -25,7 +25,7 @@ require_once('header.php');
 
 <!-- 入力画面 -->
 <?php if($mode == 'input') :?>
-  <h2 class="contact-guid">お問い合わせ内容の入力</h2>
+  <h2 class="contact-guid con-item">お問い合わせ内容の入力</h2>
   <!-- エラーメッセージ -->
   <?php if(!empty($errmessage)) :?>
     <p style="margin-bottom:1em;color:red; text-align:center; background:pink;" class="contact-error"><?php echo implode($errmessage,'<br>');?></p>
@@ -69,7 +69,7 @@ require_once('header.php');
 
 <!-- 確認画面 -->
 <?php elseif($mode == 'confirm'): ?>
-  <h2 class="contact-guid">お問い合わせ内容の確認</h2>
+  <h2 class="contact-guid con-item">お問い合わせ内容の確認</h2>
   <form action="" method="post" class="con-item contact-check">
   <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>">
     <dl class="contact-mail-detail">
@@ -88,7 +88,7 @@ require_once('header.php');
 
 <!-- 送信完了画面 -->
 <?php elseif($mode == 'send'): ?>
-  <h2 class="contact-guid">送信完了しました</h2>
+  <h2 class="contact-guid con-item">送信完了しました</h2>
   <p class="con-item">
     お問合せありがとうございます。<br><br>
     下記のアドレスより、お問い合わせ内容のご確認メール（自動送信）を送信いたしました。<br>
