@@ -1,8 +1,8 @@
 .contact-ttl {
   @include ttl-top($branch: contact);
 }
-.contact-smallttl {
-  @include ttl-sub-text;
+.contact-guid{
+  text-align: center;
 }
 .contact-mail-detail {
   margin: auto;

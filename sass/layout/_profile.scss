@@ -15,7 +15,6 @@
 
 .pf-me-detail {
   & dt {
-    font-weight: normal;
 
 @include flower-icon(wh);
   }
@@ -32,6 +31,7 @@
   }
 }
 .pf-skill-type {
+  font-weight: bold;
   @include flower-icon(wh);
 
 @include ttl-small-text;

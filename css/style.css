@@ -310,7 +310,6 @@ a {
 }
 
 .pf-me-detail dt {
-  font-weight: normal;
   position: relative;
   padding-left: 30px;
 }
@@ -344,6 +343,7 @@ a {
 }
 
 .pf-skill-type {
+  font-weight: bold;
   position: relative;
   padding-left: 30px;
   font-size: 1.2rem;
@@ -500,11 +500,8 @@ a {
   }
 }
 
-.contact-smallttl {
-  margin-bottom: .5em;
+.contact-guid {
   text-align: center;
-  font-weight: bold;
-  font-size: 1.8rem;
 }
 
 .contact-mail-detail {

@@ -17,7 +17,7 @@ $font-color: #333;
 $point-color: #a9a9a9;
 $sub-color: lighten($point-color,20%);
 $back-color: #fff;
-$accent-color:#f75656cb;
+$accent-color: #f75656cb;
 
 //PC幅の設定========================
 $pc-width-base: 1000px;
@@ -28,6 +28,7 @@ $pc-width-main: 900px;
 @mixin ttl-toppage-text {
   text-shadow: 0 0 4px $point-color;
   font-size: 1.5rem;
+
 @include mq {
     letter-spacing: .1em;
     font-size: 2rem;
@@ -43,6 +44,7 @@ $pc-width-main: 900px;
   text-shadow: 0 0 4px $point-color;
   font-weight: bold;
   font-size: 2.5rem;
+
 @include mq {
     letter-spacing: .1em;
     font-size: 3rem;
