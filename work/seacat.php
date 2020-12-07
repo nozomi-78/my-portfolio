@@ -23,19 +23,19 @@ require_once('../header.php');
         <u>※ゲームの流れをご理解いただきたいため、現在は20回のクリックでネコが生まれるよう設定しています。</u>
         </p>
         <ul class="con-item wkitem-link">
-          <li class="btn-wkitem-link" ontouchstart=""><a href="../seacat/index.php" target="_blank">作品ページへ</a></li>
-          <li class="btn-wkitem-link" ontouchstart=""><a href="https://github.com/nozomi-78/seacat" target="_blank">github</a></li>
+          <li class="btn-wkitem-link js-scroll scroll-fade-right-normal" ontouchstart=""><a href="../seacat/index.php" target="_blank">作品ページへ</a></li>
+          <li class="btn-wkitem-link js-scroll scroll-fade-right-normal" ontouchstart=""><a href="https://github.com/nozomi-78/seacat" target="_blank">github</a></li>
         </ul>
 
         <dl class="con-item wkitem-detail">
-          <dt>制作時間</dt>
+          <dt class="js-scroll scroll-underline-right-normal">制作時間</dt>
           <dd>約34時間</dd>
-          <dt>使用言語・ソフト</dt>
+          <dt class="js-scroll scroll-underline-right-normal">使用言語・ソフト</dt>
           <dd>HTML／CSS(SCSS)／JavaScript(Jquery/Ajax/json)／PHP／SQL(MySQL)／Visual Studio Code／GIMP</dd>
-          <dt>制作意図</dt>
+          <dt class="js-scroll scroll-underline-right-normal">制作意図</dt>
           <dd>PHP、SQLのスキルアップのため</dd>
           <dd>「バカみたいにくだらない、でもなぜだかﾌﾌｯとなってしまう」ゲームを作りたい。</dd>
-          <dt>コメント</dt>
+          <dt class="js-scroll scroll-underline-right-normal">コメント</dt>
           <dd>クリック数と生まれたネコの情報はAjaxを使ってデータベースに非同期で登録され、ネコの情報は図鑑ページに反映されるようにしました。<br>
           使用しているイラストは全て私がアナログで描き、GIMPで加工したものです。</dd>
         </dl>

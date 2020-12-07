@@ -1,0 +1,53 @@
+//▼フェードイン===============================
+
+// fade-top-normal
+.scroll-fade-top-normal {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.scroll-fade-top-normal.show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0);
+}
+
+//fade-top-slow
+.scroll-fade-top-slow {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.scroll-fade-top-slow.show {
+  opacity: 1;
+  transition: all 2s;
+  transform: translateY(0);
+}
+
+// fade-right-normal
+.scroll-fade-right-normal {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+.scroll-fade-right-normal.show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0);
+}
+
+//▼アンダーライン===============================
+
+//underline-right-normal
+.scroll-underline-right-normal {
+  display: inline;
+}
+.scroll-underline-right-normal::after {
+  z-index: -1;
+  background: $accent-color;
+  transition: all 1s;
+  transform: scale(0,.2);
+  transform-origin: bottom left;
+
+  @include position-tool(0,0,0,0);
+}
+.scroll-underline-right-normal.show::after {
+  transform: scale(1,.2);
+}

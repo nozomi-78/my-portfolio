@@ -34,7 +34,7 @@ require_once('header.php');
   <form action="" method="post" class="con-item">
     <dl class="contact-mail-detail">
 
-      <dt><label for="name">お名前</label></dt>
+      <dt class="js-scroll scroll-underline-right-normal"><label for="name">お名前</label></dt>
         <dd><input type="text"  name="name"  id="name"  size="30" value="<?php
           if(!empty($_SESSION)){
             echo $_SESSION['name'] ;
@@ -43,7 +43,7 @@ require_once('header.php');
           }
         ?>" required></dd>
 
-      <dt><label for="email">返信先メールアドレス</label></dt>
+      <dt class="js-scroll scroll-underline-right-normal"><label for="email">返信先メールアドレス</label></dt>
         <dd><input type="email" name="email" id="email" size="30" value="<?php
           if(!empty($_SESSION)){
             echo $_SESSION['email'] ;
@@ -52,7 +52,7 @@ require_once('header.php');
           }
         ?>" required></dd>
 
-      <dt><label for="message">お問合せ内容</label></dt>
+      <dt class="js-scroll scroll-underline-right-normal"><label for="message">お問合せ内容</label></dt>
         <dd>
           <textarea name="message" id="message" cols="30" rows="10" required><?php
             if(!empty($_SESSION)){
@@ -73,11 +73,11 @@ require_once('header.php');
   <form action="" method="post" class="con-item contact-check">
   <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>">
     <dl class="contact-mail-detail">
-      <dt>お名前</dt>
+      <dt class="js-scroll scroll-underline-right-normal">お名前</dt>
       <dd><?php echo $_SESSION['name'] ?></dd>
-      <dt>返信先メールアドレス</dt>
+      <dt class="js-scroll scroll-underline-right-normal">返信先メールアドレス</dt>
       <dd><?php echo $_SESSION['email'] ?></dd>
-      <dt>お問い合わせ内容</dt>
+      <dt class="js-scroll scroll-underline-right-normal">お問い合わせ内容</dt>
       <dd><?php echo nl2br($_SESSION['message']) ?></dd>
     </dl>
     <div class="contact-btn-area nl-item">

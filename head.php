@@ -19,3 +19,6 @@ $site_title="inoue nozomi";
       echo $site_title;
     };
   ?></title>
+
+  <!-- JavaScript -->
+  <script src="<?php echo $path; ?>js/object/scroll.js" defer></script>

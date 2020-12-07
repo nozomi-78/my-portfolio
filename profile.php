@@ -17,17 +17,17 @@ require_once('header.php');
   <main>
     <h1 class="pf-ttl con-ttl">profile</h1>
     <div class="nl-container">
-      <p class="pf-img con-item"><img src="img/profile/profile.jpg" alt=""></p>
+      <p class="pf-img con-item js-scroll scroll-fade-top-normal"><img src="img/profile/profile.jpg" alt=""></p>
       <section class="pf-me con-item">
         <h2 class="pf-sabttl">井上のぞみ</h2>
           <dl class="pf-me-detail">
-            <dt>誕生日</dt>
+            <dt class="js-scroll scroll-underline-right-normal">誕生日</dt>
             <dd>8月2日</dd>
-            <dt>出身</dt>
+            <dt class="js-scroll scroll-underline-right-normal">出身</dt>
             <dd>大阪府大阪市</dd>
-            <dt>趣味・好きなこと</dt>
+            <dt class="js-scroll scroll-underline-right-normal">趣味・好きなこと</dt>
             <dd>ポケモン／絵を描くこと／ハリーポッターシリーズ</dd>
-            <dt>プログラミングを勉強し始めた理由</dt>
+            <dt class="js-scroll scroll-underline-right-normal">プログラミングを勉強し始めた理由</dt>
             <dd>学生の頃からイラストや動画など、画面の中で何かを作るのが大好きでした。<br>
             そして以前の職場でECサイトの担当へ異動した時に初めてプログラミングというものを知り、
             「かっこいい！やってみたい！できるようになりたい！！」という純粋な憧れを持ったのがきっかけです。<br>
@@ -41,7 +41,7 @@ require_once('header.php');
         <h2 class="pf-sabttl">skill</h2>
         <div class="pf-skill-inner">
           <section>
-            <h3 class="pf-skill-type">言語</h3>
+            <h3 class="pf-skill-type js-scroll scroll-underline-right-normal">言語</h3>
               <ul class="pf-skill-detail">
                 <li>HTML</li>
                 <li>CSS</li>
@@ -54,7 +54,7 @@ require_once('header.php');
               </ul>
           </section>
           <section>
-            <h3 class="pf-skill-type">ソフトウェア</h3>
+            <h3 class="pf-skill-type js-scroll scroll-underline-right-normal">ソフトウェア</h3>
               <ul class="pf-skill-detail">
                 <li>Photoshop</li>
                 <li>Illustrator</li>

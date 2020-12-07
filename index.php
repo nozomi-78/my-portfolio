@@ -20,7 +20,7 @@ require_once('header.php');
     <h1 class="home-ttl">inoue<br>nozomi</h1>
     <div class="nl-container">
       <section>
-        <lu class="home-nav home-item">
+        <lu class="home-nav home-item js-scroll scroll-fade-top-normal">
           <li class="btn-homenav"><a href="profile.php" ontouchstart="">profile<img src="img/content-icon-profile.png" alt="クリックでプロフィールページへ移動"></a></li>
           <li class="btn-homenav"><a href="works.php" ontouchstart="">works<img src="img/content-icon-works.png" alt="クリックで作品集ページへ移動"></a></li>
           <li class="btn-homenav"><a href="contact.php" ontouchstart="">contact<img src="img/content-icon-contact.png" alt="クリックで問い合わせページへ移動"></a></li>
@@ -28,7 +28,7 @@ require_once('header.php');
       </section>
 
       <section class="home-message-wrap">
-        <p class="home-message-text js-home-message-text">ごゆっくりどうぞ。</p>
+        <p class="home-message-text js-home-message-text js-scroll scroll-fade-top-slow">ごゆっくりどうぞ。</p>
       </section>
     </div>
   </main>

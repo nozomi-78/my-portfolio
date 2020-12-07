@@ -18,7 +18,7 @@ require_once('header.php');
     <h1 class="wk-ttl con-ttl">works</h1>
     <div class="wk-works nl-container">
 
-      <section class="wk-work con-item">
+      <section class="wk-work con-item js-scroll scroll-fade-top-normal">
           <p class="wk-work-type">site</p>
         <a href="work/my-portfolio.php" class="wk-work-link">
           <h2 class="wk-work-name">ポートフォリオ</h2>
@@ -29,7 +29,7 @@ require_once('header.php');
         </a>
       </section>
 
-      <section class="wk-work con-item">
+      <section class="wk-work con-item js-scroll scroll-fade-top-normal">
           <p class="wk-work-type">game</p>
         <a href="work/seacat.php" class="wk-work-link">
           <h2 class="wk-work-name">シーキャット</h2>
