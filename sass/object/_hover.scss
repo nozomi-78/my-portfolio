@@ -7,7 +7,7 @@
     transition: .5s;
     transform: scaley(0);
 
-    @include position-tool(0,-8px,0,-8px);
+@include position-tool(0,-8px,0,-8px);
   }
   &:hover:before {
     transform: scale(1);
