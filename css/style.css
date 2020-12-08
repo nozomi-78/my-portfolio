@@ -54,38 +54,11 @@ a {
 .head {
   position: -webkit-sticky;
   position: sticky;
-  z-index: 50;
   top: 0;
+  z-index: 50;
   background: rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0 2px 3px -3px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 3px -3px rgba(0, 0, 0, 0.3);
-}
-
-.btn-globalnav a {
-  position: relative;
-}
-
-.btn-globalnav a:before {
-  border-bottom: solid 1px #333;
-  -webkit-transition: .5s;
-  transition: .5s;
-  -webkit-transform: scaley(0);
-          transform: scaley(0);
-  position: absolute;
-  top: 0;
-  right: -8px;
-  bottom: 0;
-  left: -8px;
-  content: '';
-}
-
-.btn-globalnav a:hover:before {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.btn-globalnav a:hover {
-  text-shadow: 0 0 2px #a9a9a9;
 }
 
 .head-ttl {
@@ -183,30 +156,22 @@ a {
           justify-content: center;
 }
 
-.btn-homenav {
+.home-nav li {
   list-style-type: none;
   text-align: center;
-  -webkit-transition: .3s;
-  transition: .3s;
   font-size: 1.2rem;
   margin: auto auto;
   width: auto;
   border: solid 1px #333;
 }
 
-.btn-homenav:hover {
-  -webkit-box-shadow: 0 0 16px 16px gainsboro inset;
-          box-shadow: 0 0 16px 16px gainsboro inset;
-  text-shadow: 0 0 4px #a9a9a9;
-}
-
-.btn-homenav a {
+.home-nav li a {
   width: 100%;
   display: inline-block;
   padding: .5em 0;
 }
 
-.btn-homenav + li {
+.home-nav li + li {
   margin-left: 1em;
 }
 
@@ -217,14 +182,14 @@ a {
 }
 
 .home-message-wrap:before {
+  width: 40%;
+  background: url(../img/usagi.png) no-repeat center center/contain;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: auto;
   content: '';
-  width: 40%;
-  background: url(../img/usagi.png) no-repeat center center/contain;
 }
 
 .home-message-text {
@@ -539,7 +504,7 @@ a {
   width: 100%;
 }
 
-.contact-btn-area {
+.contact-btn-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,32 +513,24 @@ a {
           justify-content: center;
 }
 
-.btn-contact {
+.contact-btn {
   text-align: center;
   margin: auto auto;
   width: 30%;
   border: solid 1px #333;
-  -webkit-transition: .3s;
-  transition: .3s;
 }
 
-.btn-contact input {
+.contact-btn input {
   width: 100%;
   padding: .5em 1em;
 }
 
-.btn-contact:hover {
-  -webkit-box-shadow: 0 0 8px 8px gainsboro inset;
-          box-shadow: 0 0 8px 8px gainsboro inset;
-  text-shadow: 0 0 4px #a9a9a9;
-}
-
-.btn-contact a {
+.contact-btn a {
   display: inline-block;
   padding: .5em 1em;
 }
 
-.btn-contact + .btn-contact {
+.contact-btn + .btn-contact {
   margin-left: 1em;
 }
 
@@ -612,17 +569,6 @@ a {
 
 .wkitem-word {
   text-align: center;
-}
-
-.btn-wkitem-link {
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.btn-wkitem-link:hover {
-  -webkit-box-shadow: 0 0 8px 8px gainsboro inset;
-          box-shadow: 0 0 8px 8px gainsboro inset;
-  text-shadow: 0 0 4px #a9a9a9;
 }
 
 .wkitem-link li {
@@ -685,39 +631,69 @@ a {
   content: '◦';
 }
 
-.btn-wkitem-return {
+.wkitem-return-btn {
   text-align: center;
   margin: auto auto;
   width: 30%;
   border: solid 1px #333;
-  -webkit-transition: .3s;
-  transition: .3s;
 }
 
-.btn-wkitem-return a {
+.wkitem-return-btn a {
   width: 100%;
   display: inline-block;
   padding: .5em 1em;
-}
-
-.btn-wkitem-return:hover {
-  -webkit-box-shadow: 0 0 8px 8px gainsboro inset;
-          box-shadow: 0 0 8px 8px gainsboro inset;
-  text-shadow: 0 0 4px #a9a9a9;
 }
 
 @media screen and (min-width: 560px) {
   .wkitem-link li {
     width: 30%;
   }
-  .btn-wkitem-return {
+  .wkitem-return-btn {
     margin: auto auto;
     width: 20%;
     border: solid 1px #333;
   }
-  .btn-wkitem-return a {
+  .wkitem-return-btn a {
     width: 100%;
   }
+}
+
+.hover-underline {
+  position: relative;
+}
+
+.hover-underline:before {
+  border-bottom: solid 1px #333;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: scaley(0);
+          transform: scaley(0);
+  position: absolute;
+  top: 0;
+  right: -8px;
+  bottom: 0;
+  left: -8px;
+  content: '';
+}
+
+.hover-underline:hover:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.hover-underline:hover {
+  text-shadow: 0 0 2px #a9a9a9;
+}
+
+.hover-inner-shadow {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.hover-inner-shadow:hover {
+  -webkit-box-shadow: 0 0 16px 16px gainsboro inset;
+          box-shadow: 0 0 16px 16px gainsboro inset;
+  text-shadow: 0 0 4px #a9a9a9;
 }
 
 .scroll-fade-top-normal {

@@ -3,9 +3,9 @@
       <h1 class="head-ttl"><a href="<?php echo $path; ?>"><?php echo $site_title ; ?></a></h1>
       <nav>
         <lu class="head-nav">
-          <li class="btn-globalnav"><a href="<?php echo $path; ?>profile.php" ontouchstart="">profile</a></li>
-          <li class="btn-globalnav"><a href="<?php echo $path; ?>works.php" ontouchstart="">works</a></li>
-          <li class="btn-globalnav"><a href="<?php echo $path; ?>contact.php" ontouchstart="">contact</a></li>
+          <li><a href="<?php echo $path; ?>profile.php" ontouchstart=""  class="hover-underline">profile</a></li>
+          <li><a href="<?php echo $path; ?>works.php" ontouchstart=""  class="hover-underline">works</a></li>
+          <li><a href="<?php echo $path; ?>contact.php" ontouchstart=""  class="hover-underline">contact</a></li>
         </lu>
       </nav>
     </div>

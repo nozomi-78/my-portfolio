@@ -1,6 +1,5 @@
-//hoverボタン=======================================
 //アンダーライン---------------------
-@mixin hover-underline{
+.hover-underline {
   position: relative;
   &:before {
     border-bottom: $border-tool;
@@ -8,8 +7,7 @@
     transform: scaley(0);
 
 @include position-tool(0,-8px,0,-8px);
-  }
-  &:hover:before {
+  }&:hover:before {
     transform: scale(1);
   }
   &:hover {
@@ -18,10 +16,10 @@
 }
 
 //グレーシャドー---------------------
-@mixin hover-gray-shadow($blur: 16px,$spread: 16px) {
+.hover-inner-shadow {
   transition: .3s;
   &:hover {
-    box-shadow: 0 0 $blur $spread $sub-color-light inset;
+    box-shadow: 0 0 16px 16px $sub-color-light inset;
     text-shadow: 0 0 4px $sub-color;
   }
 }

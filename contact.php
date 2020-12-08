@@ -64,7 +64,7 @@ require_once('header.php');
         </dd>
 
     </dl>
-    <div class="contact-btn-area nl-item"><p class="btn-contact" ontouchstart=""><input type="submit" name="confirm" value="確認"></p></div>
+    <div class="contact-btn-wrap nl-item"><p class="contact-btn hover-inner-shadow" ontouchstart=""><input type="submit" name="confirm" value="確認"></p></div>
   </form>
 
 <!-- 確認画面 -->
@@ -80,9 +80,9 @@ require_once('header.php');
       <dt class="js-scroll scroll-underline-right-normal">お問い合わせ内容</dt>
       <dd><?php echo nl2br($_SESSION['message']) ?></dd>
     </dl>
-    <div class="contact-btn-area nl-item">
-      <p class="btn-contact" ontouchstart=""><input type="submit" name="back" value="修正"></p>
-      <p class="btn-contact" ontouchstart=""><input type="submit" name="send" value="送信"></p>
+    <div class="contact-btn-wrap nl-item">
+      <p class="contact-btn hover-inner-shadow" ontouchstart=""><input type="submit" name="back" value="修正"></p>
+      <p class="contact-btn hover-inner-shadow" ontouchstart=""><input type="submit" name="send" value="送信"></p>
     </div>
   </form>
 
@@ -98,7 +98,7 @@ require_once('header.php');
     ▽自動送信メールアドレス<br>
     nozomiinoue@www247.sakura.ne.jp
   </p>
-  <div class="contact-btn-area nl-item"><p class="btn-contact" ontouchstart=""><a href="<?php echo $path ?>">トップへ</a></p></div>
+  <div class="contact-btn-wrap nl-item"><p class="contact-btn hover-inner-shadow" ontouchstart=""><a href="<?php echo $path ?>">トップへ</a></p></div>
 <?php endif; ?>
 
     </div>

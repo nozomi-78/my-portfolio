@@ -23,8 +23,8 @@ require_once('../header.php');
         <u>※ゲームの流れをご理解いただきたいため、現在は20回のクリックでネコが生まれるよう設定しています。</u>
         </p>
         <ul class="con-item wkitem-link">
-          <li class="btn-wkitem-link js-scroll scroll-fade-right-normal" ontouchstart=""><a href="../seacat/index.php" target="_blank">作品ページへ</a></li>
-          <li class="btn-wkitem-link js-scroll scroll-fade-right-normal" ontouchstart=""><a href="https://github.com/nozomi-78/seacat" target="_blank">github</a></li>
+          <li class="hover-inner-shadow js-scroll scroll-fade-right-normal" ontouchstart=""><a href="../seacat/index.php" target="_blank">作品ページへ</a></li>
+          <li class="hover-inner-shadow js-scroll scroll-fade-right-normal" ontouchstart=""><a href="https://github.com/nozomi-78/seacat" target="_blank">github</a></li>
         </ul>
 
         <dl class="con-item wkitem-detail">

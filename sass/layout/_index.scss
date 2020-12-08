@@ -12,11 +12,9 @@
 
   justify-content: center;
 }
-.btn-homenav {
+.home-nav li {
   list-style-type: none;
   text-align: center;
-
-@include hover-gray-shadow;
 
 @include ttl-small-text;
 
@@ -36,13 +34,14 @@ $backimage-size-h: 600px;//背景画像の高さ
   padding-top: $backimage-size-h / 8 ;
   padding-bottom: $backimage-size-h / 8 ;
   &:before {
-    @include position-tool($top: 0, $right: 0, $bottom: 0);
-    width:40%;
+    width: 40%;
     background: url(../img/usagi.png) no-repeat center center/contain;
+
+@include position-tool($top: 0, $right: 0, $bottom: 0);
   }
 }
-.home-message-text{
-  width:60%;
+.home-message-text {
+  width: 60%;
   text-align: center;
 }
 

@@ -12,9 +12,6 @@
 .wkitem-word {
   text-align: center;
 }
-.btn-wkitem-link {
-  @include hover-gray-shadow(8px,8px);
-}
 
 .wkitem-link {
   & li {
@@ -36,26 +33,24 @@
   & dt {
     @include flower-icon(wh);
   }
-  & dd + dt{
-margin-top: 2.5em;
+  & dd + dt {
+    margin-top: 2.5em;
   }
-  & dd{
-    margin-top:.5em;
+  & dd {
+    margin-top: .5em;
   }
-  & dd::before{
-content:'◦';
+  & dd::before {
+    content: '◦';
   }
 }
 
-.btn-wkitem-return {
+.wkitem-return-btn {
   text-align: center;
 
 @include boxbtn-tool(30%) {
     display: inline-block;
     padding: .5em 1em;
   }
-
-@include hover-gray-shadow(8px,8px);
 }
 
 //タブレット=====================
@@ -65,7 +60,7 @@ content:'◦';
       width: 30%;
     }
   }
-  .btn-wkitem-return {
+  .wkitem-return-btn {
     @include boxbtn-tool(20%);
   }
 }
