@@ -22,7 +22,7 @@ require_once('../header.php');
         <p class="wkitem-word con-item">今ご覧いただいている私のポートフォリオサイトです。</p>
 
         <ul class="con-item wkitem-link">
-          <li class="hover-inner-shadow js-scroll scroll-fade-right-normal" ontouchstart=""><a href="https://github.com/nozomi-78/my-portfolio" target="_blank">github</a></li>
+          <li class="hover-double-line js-scroll scroll-fade-right-normal" ontouchstart=""><a href="https://github.com/nozomi-78/my-portfolio" target="_blank">github</a></li>
         </ul>
 
         <dl class="con-item wkitem-detail">

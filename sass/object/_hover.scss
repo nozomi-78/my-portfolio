@@ -23,3 +23,30 @@
     text-shadow: 0 0 4px $sub-color;
   }
 }
+
+
+//二重線伸縮---------------------
+.hover-double-line {
+  position: relative;
+  border: none;
+  &:after,
+  &:before {
+    z-index:-1;
+    @include position-tool(0,0,0,0);
+    border: $border-tool;
+    content: '';
+    transition: transform .2s ;
+  }
+  &:after {
+    transform: translate(3px, 3px);
+  }
+  &:before {
+    transform: translate(-3px, -3px);
+  }
+  &:hover {
+    &:after,
+    &:before {
+      transform: translate(0);
+    }
+  }
+}

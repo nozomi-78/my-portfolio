@@ -572,16 +572,15 @@ a {
 }
 
 .wkitem-link li {
-  padding: 0 .3em;
   margin: auto auto;
+  padding: 0 1em;
   width: 50%;
-  border: solid 1px #333;
 }
 
 .wkitem-link li a {
-  width: 100%;
   display: inline-block;
   padding: .5em 0 .5em 2em;
+  width: 100%;
   position: relative;
   padding-left: 30px;
 }
@@ -599,7 +598,7 @@ a {
 }
 
 .wkitem-link li + li {
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 
 .wkitem-detail dt {
@@ -694,6 +693,42 @@ a {
   -webkit-box-shadow: 0 0 16px 16px gainsboro inset;
           box-shadow: 0 0 16px 16px gainsboro inset;
   text-shadow: 0 0 4px #a9a9a9;
+}
+
+.hover-double-line {
+  position: relative;
+  border: none;
+}
+
+.hover-double-line:after, .hover-double-line:before {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  border: solid 1px #333;
+  content: '';
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.hover-double-line:after {
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+}
+
+.hover-double-line:before {
+  -webkit-transform: translate(-3px, -3px);
+          transform: translate(-3px, -3px);
+}
+
+.hover-double-line:hover:after, .hover-double-line:hover:before {
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 .scroll-fade-top-normal {
