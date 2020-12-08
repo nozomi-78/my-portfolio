@@ -41,7 +41,7 @@
 }
 .scroll-underline-right-normal::after {
   z-index: -1;
-  background: $accent-color;
+  background: $point-color;
   transition: all 1s;
   transform: scale(0,.2);
   transform-origin: bottom left;

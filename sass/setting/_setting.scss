@@ -14,10 +14,10 @@ $breakpoints: (
 
 // 色関係の設定========================
 $font-color: #333;
-$point-color: #a9a9a9;
-$sub-color: lighten($point-color,20%);
+$sub-color: #a9a9a9;
+$sub-color-light: lighten($sub-color,20%);
+$point-color: #f75656cb;
 $back-color: #fff;
-$accent-color: #f75656cb;
 
 //PC幅の設定========================
 $pc-width-base: 1000px;
@@ -26,7 +26,7 @@ $pc-width-main: 900px;
 // 見出しスタイルの設定========================
 //トップページタイトル----------
 @mixin ttl-toppage-text {
-  text-shadow: 0 0 4px $point-color;
+  text-shadow: 0 0 4px $sub-color;
   font-size: 1.5rem;
 
 @include mq {
@@ -41,7 +41,7 @@ $pc-width-main: 900px;
 }
 //コンテンツページタイトル--------
 @mixin ttl-contentpage-text {
-  text-shadow: 0 0 4px $point-color;
+  text-shadow: 0 0 4px $sub-color;
   font-weight: bold;
   font-size: 2.5rem;
 

@@ -13,7 +13,7 @@
     transform: scale(1);
   }
   &:hover {
-    text-shadow: 0 0 2px $point-color;
+    text-shadow: 0 0 2px $sub-color;
   }
 }
 
@@ -21,7 +21,7 @@
 @mixin hover-gray-shadow($blur: 16px,$spread: 16px) {
   transition: .3s;
   &:hover {
-    box-shadow: 0 0 $blur $spread $sub-color inset;
-    text-shadow: 0 0 4px $point-color;
+    box-shadow: 0 0 $blur $spread $sub-color-light inset;
+    text-shadow: 0 0 4px $sub-color;
   }
 }
