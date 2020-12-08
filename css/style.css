@@ -674,7 +674,11 @@ a {
 }
 
 .wkitem-detail dd + dt {
-  margin-top: 2em;
+  margin-top: 2.5em;
+}
+
+.wkitem-detail dd {
+  margin-top: .5em;
 }
 
 .wkitem-detail dd::before {
