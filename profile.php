@@ -27,13 +27,12 @@ require_once('header.php');
             <dd>大阪府大阪市</dd>
             <dt class="js-scroll scroll-underline-right-normal">趣味・好きなこと</dt>
             <dd>ポケモン／絵を描くこと／ハリーポッターシリーズ</dd>
-            <dt class="js-scroll scroll-underline-right-normal">プログラミングを勉強し始めた理由</dt>
-            <dd>学生の頃からイラストや動画など、画面の中で何かを作るのが大好きでした。<br>
-            そして以前の職場でECサイトの担当へ異動した時に初めてプログラミングというものを知り、
-            「かっこいい！やってみたい！できるようになりたい！！」という純粋な憧れを持ったのがきっかけです。<br>
-            その後、仕事をしながら一年間プログラミングスクールに通い、卒業した現在もフロントエンド系を中心に興味を持ったプログラミング言語を独学で勉強しています。<br>
-            （現在はVue.jsを勉強中です。）<br>
-            新しい言語を勉強し始めるときは毎回とてもワクワクします!</dd>
+            <dt class="js-scroll scroll-underline-right-normal">目標</dt>
+            <dd>「そのサイトにとってのゴール」を勝ち取るサイトを作るエンジニア/プログラマーになる。<br>
+            ゴール＝購入やシェア等。<br>
+            その為には、このサイトのゴールは何か、ユーザーはサイトを見てワクワクするか、という考えを大切にしてサイト作りを行っていきたいです。</dd>
+            <dt class="js-scroll scroll-underline-right-normal">好きな言葉</dt>
+            <dd>向き不向きより前向き。</dd>
           </dl>
       </section>
 
